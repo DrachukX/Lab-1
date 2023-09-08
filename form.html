@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форми</title>
+</head>
+<body>
+  <h1>Лабораторна робота №1</h1>
+  <h2>Робота з формами</h2>
+  <h2>Виконав студент групи КН-31 Драчук Д.О.</h2>
+  <h2>Варіант 3</h2>
+  <a href="index.html">Головна сторінка</a>
+  <h3>Завдання</h3>
+  <p>Необхідно розробити форму для реєстрації учасника художнього форуму. 
+    Необхідно заповнити наступні данні:
+  </p>
+  <ul>
+    <li>
+      дані про реєстрацію, включають логін, пароль, електрону адресу,
+      улюбленого художника (обирається зі списку);
+    </li>
+    <li>
+      особисті дані, включають улюблений колір, посилання на веб-сторінку 
+      з власним портфоліо, улюблений жанр у живописі (обирається зі списку), 
+      докладний опис власних художніх вподобань.
+    </li>
+  </ul>
+  <form action="" method="POST">
+    <fieldset>
+      <legend> Реєстрація </legend>
+      <label> Логін
+        <input id="login" type="text">
+      </label>
+      <label> Пароль
+        <input id="password" type="password">
+      </label>
+      <br>
+      <br>
+      <label> Електронна адреса
+        <input id="email" type="email">
+      </label>
+      <label> Улюблений художник
+      <select>
+        <option>Анатолій Криволап</option>
+        <option>Іван Марчук</option>
+        <option>Олег Тістол</option>
+        <option>Оксана Мась</option>
+        <option>Віктор Сидоренко</option>
+      </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend> Особисті дані </legend>
+      <label> 
+        Улюблений колір
+        <input id="colour" type="color">
+      </label>
+      <label> Посилання на веб-сторінку із власним портфоліо
+        <input id="link" type="url">
+      </label>
+      <br> 
+      <br>
+      <label>   Улюблений жанр у живописі
+        <select>
+          <option>Анімалістика</option>
+          <option>Алегоричний жанр</option>
+          <option>Батальний жанр</option>
+          <option>Побутовий жанр</option>
+          <option>Міський пейзаж</option>
+        </select>
+      </label>
+      <br>
+      <br>
+      <label> Опис власних художніх вподобань
+        <textarea rows="2" cols="40"></textarea>
+      </label>
+    </fieldset>
+    <button type="submit">Відправити</button>
+  </form>
+
+</body>
+</html>
